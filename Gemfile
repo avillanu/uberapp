@@ -6,3 +6,4 @@ gem "pg"
 gem "rake"
 gem "sinatra-activerecord"
 gem 'httparty'
+gem 'dotenv'

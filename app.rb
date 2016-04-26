@@ -2,6 +2,7 @@ require 'sinatra'
 require 'httparty'
 require 'pry'
 require 'uri'
+require 'dotenv'
 
 get '/' do
   erb :index
