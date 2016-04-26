@@ -1,0 +1,14 @@
+<form action="/location" method="POST">
+    Current location: <input type="text" name="location1">
+    Destination: <input type="text" name="location2">
+    <input type="submit">
+</form>
+<iframe
+  width="450"
+  height="250"
+  frameborder="0" style="border:0"
+  src="<%= @googlelink %>" allowfullscreen>
+</iframe>
+<%= @fare %>
+<%= @duration %>
+<%= @surge %>
