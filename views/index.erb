@@ -1,3 +1,8 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="site.css">
+<div id="rcorners5"></head><body>
+<h2>uber calculator </h2>
 <form action="/location" method="POST">
     Current location: <input type="text" name="location1">
     Destination: <input type="text" name="location2">
@@ -9,6 +14,10 @@
   frameborder="0" style="border:0"
   src="<%= @googlelink %>" allowfullscreen>
 </iframe>
-<%= @fare %>
-<%= @duration %>
-<%= @surge %>
+<BR>
+  Fare:<%= @fare %><BR>
+    Duration:
+<%= @duration %> min<BR>
+  Surge Factor:
+<%= @surge %><BR>
+</div></body></html>
