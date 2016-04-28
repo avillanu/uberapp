@@ -13,7 +13,7 @@ uberapi = ENV["uber_server_token"]
 directionsapi = ENV["google_directions_key"]
 @location1 = params[:location1]
 @location2 = params[:location2]
-@googlelink = "https://www.google.com/maps/embed/v1/directions?key=#{directionsapi}&origin=#{@location1}&destination=#{@location2}&avoid=tolls|highways"
+@googlelink = "https://www.google.com/maps/embed/v1/directions?key=#{directionsapi}&origin=#{@location1}&destination=#{@location2}&avoid=tolls|highways&mode=driving"
 uri = URI("https://maps.googleapis.com/maps/api/geocode/json?address=#{@location1}&key=#{googleapi}")
 response = Net::HTTP.get_response(uri)
 response2 = JSON.parse(response.body)
